@@ -55,6 +55,23 @@ export default function ChatPage() {
         {loading && <p className="text-gray-500">Nagrik AI is typing...</p>}
       </div>
 
+      <div className="flex flex-wrap gap-2 mb-3">
+        {[
+          "What schemes am I eligible for as a farmer?",
+          "Documents needed for a ration card",
+          "Senior citizen pension schemes",
+        ].map((q) => (
+          <button
+            key={q}
+            type="button"
+            onClick={() => setInput(q)}
+            className="text-sm border rounded-full px-3 py-1 hover:bg-gray-100"
+          >
+            {q}
+          </button>
+        ))}
+      </div>
+
       <form onSubmit={sendMessage} className="flex gap-2">
         <label htmlFor="chat-input" className="sr-only">Type your question</label>
         <input
