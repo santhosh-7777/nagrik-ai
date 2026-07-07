@@ -11,7 +11,8 @@ export default function ChatPage() {
     if (!input.trim()) return;
 
     const userMessage = input;
-    setMessages((prev) => [...prev, { role: "user", text: userMessage }]);
+    const updatedMessages = [...messages, { role: "user", text: userMessage }];
+    setMessages(updatedMessages);
     setInput("");
     setLoading(true);
 
@@ -19,7 +20,10 @@ export default function ChatPage() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage }),
+        body: JSON.stringify({
+          message: userMessage,
+          history: updatedMessages.slice(0, -1),
+        }),
       });
       const data = await res.json();
       setMessages((prev) => [...prev, { role: "ai", text: data.reply || data.error }]);
@@ -86,6 +90,10 @@ export default function ChatPage() {
           Send
         </button>
       </form>
+
+      <p className="text-sm text-gray-500 mt-2 text-center">
+        Ask in English, Hindi, Telugu, or any language you're comfortable with.
+      </p>
     </main>
   );
 }
