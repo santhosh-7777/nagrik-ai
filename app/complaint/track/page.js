@@ -63,27 +63,29 @@ export default function TrackPage() {
           value={complaintId}
           onChange={(e) => setComplaintId(e.target.value)}
           placeholder="Enter your complaint ID"
-          className="flex-1 border rounded-lg px-4 py-2"
+          className="flex-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           type="submit"
           disabled={loading}
-          className="bg-blue-600 text-white px-5 py-2 rounded-lg"
+          className="bg-blue-600 text-white px-5 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2"
         >
           {loading ? "Tracking..." : "Track"}
         </button>
       </form>
 
-      {error && <p className="text-red-600 mb-4">{error}</p>}
+      <div aria-live="polite">
+        {error && <p className="text-red-600 mb-4">{error}</p>}
+      </div>
 
       {complaint && (
-        <div className="border rounded-lg p-6">
+        <div className="border rounded-lg p-6" aria-live="polite">
           <p><span className="font-medium">Status:</span> {complaint.status}</p>
           <p><span className="font-medium">Category:</span> {complaint.category}</p>
           <p><span className="font-medium">Description:</span> {complaint.description}</p>
           <p><span className="font-medium">Location:</span> {complaint.location}</p>
           {complaint.createdAt && (
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-600 text-sm mt-2">
               Filed: {new Date(complaint.createdAt._seconds ? complaint.createdAt._seconds * 1000 : complaint.createdAt).toLocaleString()}
             </p>
           )}
@@ -93,7 +95,7 @@ export default function TrackPage() {
               type="button"
               disabled={updating}
               onClick={() => updateStatus("in_progress")}
-              className="text-sm border rounded-full px-3 py-1 hover:bg-gray-100"
+              className="text-sm border rounded-full px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               Mark In Progress
             </button>
@@ -101,7 +103,7 @@ export default function TrackPage() {
               type="button"
               disabled={updating}
               onClick={() => updateStatus("resolved")}
-              className="text-sm border rounded-full px-3 py-1 hover:bg-gray-100"
+              className="text-sm border rounded-full px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               Mark Resolved
             </button>
