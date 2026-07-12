@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "index-knowledge": "node scripts/index-knowledge.mjs"
   },
   "dependencies": {
     "firebase-admin": "^13.10.0",

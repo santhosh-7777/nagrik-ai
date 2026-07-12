@@ -17,6 +17,7 @@ Build a GenAI-powered civic platform that helps citizens access government servi
 
 ### 1. AI Civic Companion (Chat)
 - Conversational assistant powered by Llama 3.3 70B (via Groq)
+- **RAG (Retrieval-Augmented Generation)** — answers grounded in a curated knowledge base of 15+ government schemes with official source links
 - Remembers context across the conversation — if a citizen mentions their occupation or location, the AI uses it to personalize every following answer without repeating questions
 - Proactively recommends government schemes based on citizen details (e.g. mentioning "farmer" surfaces PM-KISAN; "senior citizen" surfaces pension schemes) — not just reactive Q&A
 - Lists exact document requirements for common civic processes
@@ -74,6 +75,16 @@ FIREBASE_PRIVATE_KEY="your_firebase_private_key"
 Run locally:
 npm run dev
 
+### RAG knowledge base
+
+The chat uses **Retrieval-Augmented Generation** — it searches a curated knowledge base before answering, so responses are grounded in verified scheme data with official source links.
+
+**Works out of the box** via keyword search over `data/knowledge/schemes.json` (15 schemes included).
+
+**Optional vector search:** Run `npm run index-knowledge` to build `data/knowledge/index.json` with Groq embeddings. Note: Groq embedding models may not be available on all API keys yet — keyword search is used automatically as fallback.
+
+To add more schemes: edit `data/knowledge/schemes.json`, then re-run `npm run index-knowledge` if using vector search.
+
 Visit http://localhost:3000.
 
 ## Project Structure
@@ -88,6 +99,12 @@ complaint/track/page.js      # Track complaint status
 lib/
 firebase.js                  # Firestore admin setup
 grok.js                      # Groq LLM logic (chat + categorization)
+embeddings.js                # Groq embedding helpers
+knowledge.js                 # Load curated scheme documents
+rag.js                       # Retrieve relevant docs for chat
+data/knowledge/
+schemes.json                 # Curated government scheme knowledge base
+index.json                   # Pre-built embeddings (run npm run index-knowledge)
 
 ## Roadmap / Future Improvements
 

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "pm-kisan",
+    "title": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "category": "agriculture",
+    "tags": ["farmer", "agriculture", "income", "kisan", "crop"],
+    "content": "Central government income support scheme for landholding farmer families. Provides ₹6,000 per year in three equal installments of ₹2,000 directly into the bank account.",
+    "eligibility": "All landholding farmer families subject to exclusion criteria (income tax payers in assessment year, constitutional post holders, etc.). Both small and marginal farmers are covered.",
+    "documents": ["Aadhaar card", "Bank account details", "Land ownership records"],
+    "how_to_apply": "Register through the PM-KISAN portal (pmkisan.gov.in) or visit the nearest agriculture department / Common Service Centre (CSC).",
+    "source_url": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "ayushman-bharat",
+    "title": "Ayushman Bharat – PM-JAY",
+    "category": "health",
+    "tags": ["health", "insurance", "hospital", "poor", "bpl", "senior"],
+    "content": "World's largest health insurance scheme providing coverage up to ₹5 lakh per family per year for secondary and tertiary hospitalization at empanelled public and private hospitals.",
+    "eligibility": "Families identified as deprived based on SECC 2011 data for rural areas and defined occupational categories for urban areas. State-specific expansion may cover additional families.",
+    "documents": ["Aadhaar card", "Ration card or SECC eligibility letter", "Mobile number"],
+    "how_to_apply": "Check eligibility on pmjay.gov.in using mobile number or ration card. Visit an empanelled hospital or Ayushman Mitra for enrollment assistance.",
+    "source_url": "https://pmjay.gov.in"
+  },
+  {
+    "id": "ration-card",
+    "title": "Ration Card (PDS / NFSA)",
+    "category": "food",
+    "tags": ["ration", "food", "pds", "bpl", "apl", "subsidy", "groceries"],
+    "content": "State-issued card for subsidized food grains (rice, wheat, sugar) and other essentials through the Public Distribution System under the National Food Security Act.",
+    "eligibility": "Indian residents meeting state-specific income and family criteria. Categories include APL, BPL, and Antyodaya Anna Yojana (AAY) with different entitlements.",
+    "documents": ["Aadhaar cards of all family members", "Passport-size photographs", "Address proof", "Income certificate (if applicable)", "Previous ration card (if any)"],
+    "how_to_apply": "Apply online through your state's food and civil supplies portal or visit the nearest ration office / CSC. Processing time varies by state.",
+    "source_url": "https://nfsa.gov.in"
+  },
+  {
+    "id": "passport",
+    "title": "Indian Passport Application",
+    "category": "documents",
+    "tags": ["passport", "travel", "visa", "document", "identity"],
+    "content": "Official travel document issued by the Ministry of External Affairs through Passport Seva Kendras. Available as regular (36 pages) or jumbo (60 pages) booklet.",
+    "eligibility": "Any Indian citizen. Minors require parental consent and additional documents.",
+    "documents": ["Proof of address (Aadhaar, utility bill, bank passbook)", "Proof of date of birth (birth certificate, school leaving certificate, Aadhaar)", "Photo ID proof", "Passport-size photographs"],
+    "how_to_apply": "Register on passportindia.gov.in, fill the application form, pay fees online, and book an appointment at the nearest Passport Seva Kendra (PSK) or Post Office PSK.",
+    "source_url": "https://www.passportindia.gov.in"
+  },
+  {
+    "id": "aadhaar",
+    "title": "Aadhaar Enrollment and Update",
+    "category": "documents",
+    "tags": ["aadhaar", "uid", "identity", "biometric", "document"],
+    "content": "12-digit unique identity number issued by UIDAI based on biometric and demographic data. Required for most government schemes and services.",
+    "eligibility": "Any resident of India (including infants). Non-residents are not eligible.",
+    "documents": ["Proof of identity (PAN, passport, voter ID, etc.)", "Proof of address", "Proof of date of birth (for children under 5, only birth certificate needed)"],
+    "how_to_apply": "Visit an Aadhaar Enrollment Centre or book appointment on uidai.gov.in. Updates (address, mobile, photo) can be done online for supported fields.",
+    "source_url": "https://uidai.gov.in"
+  },
+  {
+    "id": "mgnrega",
+    "title": "MGNREGA (Mahatma Gandhi NREGA)",
+    "category": "employment",
+    "tags": ["employment", "rural", "labour", "work", "wages", "job guarantee"],
+    "content": "Guarantees 100 days of wage employment in a financial year to every rural household whose adult members volunteer for unskilled manual work.",
+    "eligibility": "Adult members of rural households willing to do unskilled manual work. One Job Card per household.",
+    "documents": ["Aadhaar card", "Passport-size photograph", "Address proof in rural area"],
+    "how_to_apply": "Apply for a Job Card at the local Gram Panchayat office. Work is allocated through the Panchayat and wages are paid to bank/post office accounts.",
+    "source_url": "https://nrega.nic.in"
+  },
+  {
+    "id": "atal-pension",
+    "title": "Atal Pension Yojana (APY)",
+    "category": "pension",
+    "tags": ["pension", "senior", "retirement", "unorganized", "worker"],
+    "content": "Pension scheme for workers in the unorganized sector providing guaranteed minimum pension of ₹1,000 to ₹5,000 per month after age 60, depending on contribution.",
+    "eligibility": "Indian citizens aged 18–40 years with a savings bank account. Must have Aadhaar and mobile number linked to the account.",
+    "documents": ["Aadhaar card", "Bank account details", "Mobile number"],
+    "how_to_apply": "Enroll through your bank branch or net banking. Auto-debit of contributions from the linked bank account.",
+    "source_url": "https://npscra.nsdl.co.in/apy-scheme.php"
+  },
+  {
+    "id": "ignoaps",
+    "title": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "category": "pension",
+    "tags": ["pension", "senior", "elderly", "old age", "bpl"],
+    "content": "Central assistance of ₹200 per month (₹500 for persons above 80 years) plus state top-up for BPL persons aged 60 years and above.",
+    "eligibility": "Persons aged 60+ belonging to BPL households as per state BPL list. State governments may have additional criteria.",
+    "documents": ["Aadhaar card", "Age proof (birth certificate, voter ID)", "BPL ration card or BPL certificate", "Bank account details"],
+    "how_to_apply": "Apply through the Block Development Office, Gram Panchayat, or state social welfare department portal.",
+    "source_url": "https://nsap.nic.in"
+  },
+  {
+    "id": "pm-jan-dhan",
+    "title": "PM Jan Dhan Yojana (PMJDY)",
+    "category": "banking",
+    "tags": ["bank", "account", "financial inclusion", "zero balance", "insurance"],
+    "content": "National mission for financial inclusion providing zero-balance bank accounts with RuPay debit card, accident insurance cover of ₹2 lakh, and overdraft facility up to ₹10,000.",
+    "eligibility": "Any Indian citizen who does not have a bank account. One account per person.",
+    "documents": ["Aadhaar card (or other officially valid KYC document)", "Passport-size photograph"],
+    "how_to_apply": "Visit any bank branch or Business Correspondent (Bank Mitra) outlet with KYC documents. Account can be opened on the spot.",
+    "source_url": "https://pmjdy.gov.in"
+  },
+  {
+    "id": "pm-svanidhi",
+    "title": "PM SVANidhi (Street Vendor Loan Scheme)",
+    "category": "business",
+    "tags": ["street vendor", "loan", "business", "micro credit", "hawker"],
+    "content": "Special micro-credit facility providing collateral-free working capital loans up to ₹10,000 (first tranche), ₹20,000 (second), and ₹50,000 (third) to street vendors.",
+    "eligibility": "Street vendors in urban areas with Certificate of Vending or Letter of Recommendation from Urban Local Body. Must have been vending before March 24, 2020.",
+    "documents": ["Aadhaar card", "Vending certificate or ULB recommendation letter", "Bank account details", "Mobile number"],
+    "how_to_apply": "Apply through the PM SVANidhi portal (pmsvanidhi.mohua.gov.in) or through Urban Local Body / CSC.",
+    "source_url": "https://pmsvanidhi.mohua.gov.in"
+  },
+  {
+    "id": "national-scholarship",
+    "title": "National Scholarship Portal (NSP)",
+    "category": "education",
+    "tags": ["scholarship", "student", "education", "school", "college"],
+    "content": "Single portal for applying to central and state government scholarships for school, college, and professional course students from SC, ST, OBC, minority, and economically weaker sections.",
+    "eligibility": "Varies by scholarship scheme — typically based on category, family income, academic performance, and institution type. Check specific scheme on scholarships.gov.in.",
+    "documents": ["Aadhaar / Bonafide certificate", "Income certificate", "Caste/category certificate (if applicable)", "Previous mark sheets", "Bank account details", "Institution verification form"],
+    "how_to_apply": "Register on scholarships.gov.in (National Scholarship Portal), select the relevant scheme, fill the application, and submit before the deadline.",
+    "source_url": "https://scholarships.gov.in"
+  },
+  {
+    "id": "pmay",
+    "title": "Pradhan Mantri Awas Yojana (PMAY)",
+    "category": "housing",
+    "tags": ["housing", "home", "house", "construction", "urban", "rural"],
+    "content": "Affordable housing scheme providing credit-linked subsidy on home loans for Economically Weaker Section (EWS), Low Income Group (LIG), and Middle Income Group (MIG) beneficiaries.",
+    "eligibility": "Beneficiary family should not own a pucca house. Income limits vary: EWS up to ₹3 lakh, LIG ₹3–6 lakh, MIG-I ₹6–12 lakh, MIG-II ₹12–18 lakh per annum.",
+    "documents": ["Aadhaar cards of all family members", "Income proof", "Property documents (for existing house) or land documents (for construction)", "Bank loan sanction letter"],
+    "how_to_apply": "Apply through pmaymis.gov.in or via participating banks and housing finance companies for credit-linked subsidy.",
+    "source_url": "https://pmaymis.gov.in"
+  },
+  {
+    "id": "ujjwala",
+    "title": "PM Ujjwala Yojana",
+    "category": "welfare",
+    "tags": ["lpg", "gas", "cylinder", "cooking", "women", "bpl"],
+    "content": "Provides free LPG connections to women from BPL households to replace unclean cooking fuels. Includes deposit-free connection and first refill/flexible payment options.",
+    "eligibility": "Adult women from BPL households without an existing LPG connection. SECC 2011 list or BPL ration card holders are prioritized.",
+    "documents": ["BPL ration card or SECC list reference", "Aadhaar card", "Bank account details", "Passport-size photograph"],
+    "how_to_apply": "Apply through your nearest LPG distributor or online via the PM Ujjwala portal. Distributor verifies eligibility and issues connection.",
+    "source_url": "https://www.pmuy.gov.in"
+  },
+  {
+    "id": "pm-fasal-bima",
+    "title": "PM Fasal Bima Yojana (PMFBY)",
+    "category": "agriculture",
+    "tags": ["farmer", "crop insurance", "agriculture", "flood", "drought"],
+    "content": "Crop insurance scheme providing financial support to farmers suffering crop loss or damage due to natural calamities, pests, and diseases. Low premium rates subsidized by government.",
+    "eligibility": "All farmers growing notified crops in notified areas — both loanee and non-loanee farmers can enroll.",
+    "documents": ["Aadhaar card", "Bank account details", "Land records / sowing certificate", "Crop details"],
+    "how_to_apply": "Enroll through banks (for loanee farmers), insurance companies, CSCs, or the PMFBY portal during the crop season enrollment window.",
+    "source_url": "https://pmfby.gov.in"
+  },
+  {
+    "id": "digilocker",
+    "title": "DigiLocker",
+    "category": "documents",
+    "tags": ["documents", "digital", "certificate", "license", "storage"],
+    "content": "Government cloud platform for issuing and verifying documents and certificates digitally. Linked documents are legally equivalent to physical originals under IT Act.",
+    "eligibility": "Any Indian citizen with an Aadhaar number and mobile number.",
+    "documents": ["Aadhaar number", "Mobile number (for OTP verification)"],
+    "how_to_apply": "Sign up at digilocker.gov.in using Aadhaar OTP. Pull documents issued by registered issuers (CBSE, RTO, income tax, etc.) into your locker.",
+    "source_url": "https://www.digilocker.gov.in"
+  }
+]
