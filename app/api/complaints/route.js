@@ -1,7 +1,13 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebase";
+import { getAdmin } from "@/lib/auth";
 
 export async function GET() {
+  const admin = await getAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const snapshot = await db.collection("complaints").orderBy("createdAt", "desc").get();
     const complaints = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));

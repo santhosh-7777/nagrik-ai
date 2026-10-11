@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebase";
+import { getAdmin } from "@/lib/auth";
 
 export async function GET(req, { params }) {
   try {
@@ -16,6 +17,11 @@ export async function GET(req, { params }) {
 }
 
 export async function PATCH(req, { params }) {
+  const admin = await getAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const { id } = await params;
     const { status } = await req.json();
