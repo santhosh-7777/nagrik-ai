@@ -11,6 +11,7 @@ export async function POST(req) {
 
     const safeHistory = Array.isArray(history) ? history : [];
     const { chunks, sources, method } = await retrieveRelevantDocs(message);
+    console.log("Retrieval method:", method, sources.map((s) => s.id));
     const ragContext = buildRagContext(chunks);
     const { reply } = await askNagrikAI(message, safeHistory, { ragContext, sources });
 
