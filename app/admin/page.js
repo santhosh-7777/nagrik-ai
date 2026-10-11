@@ -67,6 +67,11 @@ export default function AdminPage() {
       setUpdatingId(null);
     }
   }
+  
+  async function handleLogout() {
+  await fetch("/api/auth/logout", { method: "POST" });
+  window.location.href = "/login";
+}
 
   const stats = useMemo(() => ({
     total: complaints.length,
@@ -84,11 +89,17 @@ export default function AdminPage() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 sm:px-6 py-8">
-      <PageHeader
+            <PageHeader
         title="Admin Dashboard"
         description="View and manage all citizen complaints. Update statuses and monitor urgency levels."
         backHref="/"
       />
+
+      <div className="flex justify-end mb-4">
+        <Button variant="secondary" size="sm" onClick={handleLogout}>
+          Sign out
+        </Button>
+      </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
         <StatCard label="Total" value={stats.total} color="text-[var(--foreground)]" />
